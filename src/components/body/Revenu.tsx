@@ -3,6 +3,7 @@ import React from 'react';
 function Revenu() {
   return (
     <>
+    <div className='justify-center items-center p-11 text-center max-w-5xl mx-auto'>
       <h1 className="text-4xl font-medium text-black text-center mt-10">
         You're missing revenue hiding in your data
       </h1>
@@ -18,7 +19,9 @@ function Revenu() {
             Pricing, packaging, GTM, and product bets are pressure-tested against retention and expansion impact, so teams stop guessing and commit capital where growth is most likely
           </div>
         </div>
-        <img src="/assets/view.gif" alt="Workflow" className="max-w-screen-sm" />
+        <div className='flex justify-center'>
+          <img src="/assets/view.gif" alt="Workflow" className="max-w-md" />
+        </div>
       </div>
 
       <div className='lg:flex justify-between mt-20 gap-x-20'>
@@ -30,7 +33,9 @@ function Revenu() {
             Customer, product, and revenue signals are continuously reconciled into one trusted business model, so every team works from the same reality
           </div>
         </div>
-        <img src="/assets/risk.gif" alt="Workflow" className="max-w-screen-sm" />
+        <div className='flex justify-center'>
+          <img src="/assets/risk.gif" alt="Workflow" className="max-w-md" />
+        </div>
       </div>
 
       <div className='lg:flex justify-between mt-20  gap-x-20'>
@@ -42,7 +47,9 @@ function Revenu() {
             Customer, product, and revenue signals are continuously reconciled into one trusted business model, so every team works from the same reality
           </div>
         </div>
-        <img src="/assets/decision.png" alt="Workflow" className="max-w-screen-sm" />
+        <div className='flex justify-center'>
+          <img src="/assets/decision.png" alt="Workflow" className="max-w-md" />
+        </div>
       </div>
 
       <div className='lg:flex justify-between mt-20 gap-x-20'>
@@ -54,10 +61,12 @@ function Revenu() {
             The right teams receive prioritized, decision-ready insights at the right moment, so analysis turns into action, not dashboards
           </div>
         </div>
-        <img src="/assets/insight.gif" alt="Workflow" className="max-w-screen-sm" />
+        <div className='flex justify-center'>
+          <img src="/assets/insight.gif" alt="Workflow" className="max-w-md" />
+        </div>
+      </div>
       </div>
     </>
-   
   );
 }
 
