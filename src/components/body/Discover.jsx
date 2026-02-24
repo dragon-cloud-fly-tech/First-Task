@@ -8,7 +8,9 @@ const Discover = () => {
       </h1>
       <div className='flex justify-center items-center'>
         <input type="text" placeholder='Enter your email' className='border-2 border-gray-300 px-6 py-3 rounded-l-md mt-10 w-full max-w-md' />
-        <input type="text" placeholder='See what’s driving growth' className='border-2 border-gray-300 px-6 py-3 rounded-r-md mt-10 w-full max-w-md' />
+        <button type="button" className='border-2 bg-white border-gray-300 px-6 py-3 w-full rounded-r-md mt-10 max-w-md hover:bg-blue-800 hover:text-white'>
+          See what’s driving growth
+        </button>
       </div>
       
     </div>

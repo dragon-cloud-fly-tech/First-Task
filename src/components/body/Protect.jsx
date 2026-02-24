@@ -18,8 +18,9 @@ const Protect = () => {
        </div>
         </div>
         <div className='flex flex-end  mix-blend-luminosity  mt-36'>
-          <img src="/assets/6827dcaab451d2866c95c4c9_Screenshot_2025-05-16_at_5.43.23_PM-removebg-preview.png" alt="Workflow" className=" max-w-52 max-h-40 " />
-          <img src="/assets/67b7b5c8f681a98dff85cad2_soc2-removebg-preview.png" alt="Workflow" className=" max-w-52 max-h-40 " />
+          <img src="/assets/GDPR.png" alt="Workflow" className=" max-w-52 max-h-40 " />
+          <img src="/assets/soc.png" alt="Workflow" className=" max-w-52 max-h-40 " />
+          
         </div>
       </div>
   );
