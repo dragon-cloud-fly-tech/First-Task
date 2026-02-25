@@ -1,6 +1,13 @@
 import React from 'react';
 
 const Mark = () => {
+  const imagesData = [
+    { name: "Kiwi", src: "/assets/Kiwi.png" },
+    { name: "depot", src: "/assets/depot.png" },
+    { name: "Close", src: "/assets/Close.svg" },
+    { name: "Intuit", src: "/assets/Intuit.png" },
+    { name: "sumup", src: "/assets/sumup.png" }
+  ];
   return (
     <>
     <div className='flex justify-center mt-10'>
@@ -8,13 +15,12 @@ const Mark = () => {
         Trusted by teams turning customer signals into revenue decisions
       </h3>
     </div>
-    <div className='flex justify-center p-5 gap-x-20 mix-blend-luminosity'>
-        <img src="/assets/Kiwi.png" alt="Workflow" className="max-w-sm max-h-12" />
-        <img src="/assets/depot.png" alt="Workflow" className="max-w-sm max-h-12" />
-        <img src="/assets/Close.svg" alt="Workflow" className="max-w-sm max-h-12" />
-        <img src="/assets/Intuit.png" alt="Workflow" className="max-w-sm max-h-12" />
-        <img src="/assets/sumup.png" alt="Workflow" className="max-w-sm max-h-12" />
-       
+    <div className='flex justify-around p-5 mix-blend-luminosity gap-4 max-w-4xl mx-auto'>
+      {imagesData.map((image) => (
+        <div key={image.name} className='w-1/5 flex justify-center items-center'>
+          <img src={image.src} alt={image.name} className='w-full' />
+        </div>
+      ))}
     </div>
     <div className='flex justify-center max-w-sm mx-auto text-center text-xl text-black font-normal mt-5'>
       I’ve had the chance to try Riley. As a product manager, it’s a relief and delight to finally have a product that turns data into actionable insights. Riley simplifies getting insights at scale - helping you identify themes, next steps, and launch improvements for customers much faster!
