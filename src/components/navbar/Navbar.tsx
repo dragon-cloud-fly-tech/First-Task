@@ -26,8 +26,7 @@ function Navbar() {
                       <svg className="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
                   </button>
          
-       {isOpen && (
-                  // <div id="dropdownNavbar" className="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
+          {isOpen && (
                       <ul className="p-2 text-sm text-body font-medium bg-white " aria-labelledby="dropdownNvbarButton">
                         <li>
                           <a href="#" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Dashboard</a>
@@ -42,7 +41,6 @@ function Navbar() {
                           <a href="#" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
                         </li>
                       </ul>
-                  //  </div>
                 )}
                 </li>
                 <li>
@@ -51,7 +49,6 @@ function Navbar() {
                       <svg className="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
                   </button>
           {isOpen_Second && (
-                  // <div id="dropdownNavbar" className="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
                       <ul className="p-2 text-sm text-body font-medium  bg-white" aria-labelledby="dropdownNvbarButton">
                         <li className="hover:bg-neutral-tertiary-medium hover:text-heading rounded">
                           <a href="#" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Dashboard</a>
@@ -66,7 +63,6 @@ function Navbar() {
                           <a href="#" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
                         </li>
                       </ul>
-                  // </div>
           )}
                 </li>
                  <li>
@@ -75,7 +71,6 @@ function Navbar() {
                       <svg className="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
                   </button>
           {isOpen_Third && (
-                  // <div id="dropdownNavbar" className="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
                       <ul className="p-2 text-sm text-body font-medium  bg-white" aria-labelledby="dropdownNvbarButton">
                         <li>
                           <a href="" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Dashboard</a>
@@ -84,7 +79,6 @@ function Navbar() {
                           <a href="" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Settings</a>
                         </li>
                       </ul>
-                  // </div>
           )}
                 </li>
                 <li>
@@ -98,10 +92,7 @@ function Navbar() {
             </div>
           </div>
         </nav>
-   
-    
     </>
-    
   );
 }
 

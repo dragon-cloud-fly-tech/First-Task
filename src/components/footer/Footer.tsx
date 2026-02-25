@@ -2,6 +2,13 @@ import React from 'react';
 import logo from '../../assets/logo.svg';
 
 function Footer() {
+  const listData = [
+    { name: "Careers", href: "#", className: "hover:text-gray-500 pt-5 text-md text-[#333] font-medium font-serif"},
+    { name: "Events", href: "#", className: "hover:text-gray-500 pt-5 text-md text-[#333] font-medium font-serif" },
+    { name: "FAQ", href: "#", className: "hover:text-gray-500 pt-5 text-md text-[#333] font-medium font-serif"   },
+    { name: "Press", href: "#", className: "hover:text-gray-500 pt-5 text-md text-[#333] font-medium font-serif"  },
+    { name: "Trust Center", href: "#", className: "hover:text-gray-500 pt-5 text-md text-[#333] font-medium font-serif"}
+  ];
   return (
     <footer className='mb-20'>
         <div className='py-16 flex justify-between mx-auto items-center max-w-screen-xl'>
@@ -16,23 +23,13 @@ function Footer() {
             <img src={logo} alt="Workflow" className='mt-10' />
           </div>
           <div className='flex flex-col'>
-          
-            <ul className="p-2">
-              <li>
-                <a href="#" className="hover:text-gray-500 pt-5 text-md text-[#333] font-medium font-serif">Careers</a>
-              </li>
-              <li className='pt-1'>
-                <a href="#" className="hover:text-gray-500 pt-5 text-md text-[#333] font-medium font-serif">Events</a>
-              </li>
-              <li className='pt-1'>
-                <a href="#" className="hover:text-gray-500 pt-5 text-md text-[#333] font-medium font-serif">FAQ</a>
-              </li>
-              <li className='pt-1'>
-                <a href="#" className="hover:text-gray-500 pt-5 text-md text-[#333] font-medium font-serif">Press</a>
-              </li>
-              <li className='pt-1'>
-                <a href="#" className="hover:text-gray-500 pt-5 text-md text-[#333] font-medium font-serif">Trust Center</a>
-              </li>
+        
+            <ul className="pt-12">
+              {listData.map((item) => (
+                <li key={item.name} className='pt-1'>
+                  <a href={item.href} className={item.className}>{item.name}</a>
+                </li>
+              ))}
             </ul>
             <div className='flex items-center gap-x-4 mt-5'>
               <a href="#" className='hover:text-gray-500'>
