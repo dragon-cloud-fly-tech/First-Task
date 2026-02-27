@@ -10,16 +10,19 @@ import Discover from './Discover';
 
 function Body() {
   return (
-    <div className="container mx-auto">
+    <>
+    <div className=" mx-auto">
       <Demo />
       <Studio />
       <Revenu />
       <Beneath />
       <Decision />
+      </div>
       <Mark />
+    
       <Protect />
       <Discover />
-    </div>
+    </>
   );
 }
 

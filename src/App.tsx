@@ -8,7 +8,7 @@ import Footer from './components/footer/Footer';
 function App() {
   return (
     <>
-      <div className='bg-white container mx-auto'>
+      <div className='bg-white  mx-auto'>
         <Navbar />
         <Body />
         <Footer />

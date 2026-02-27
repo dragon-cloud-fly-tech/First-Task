@@ -2,8 +2,8 @@ import React from 'react';
 
 function Studio() {
   return (
-    <div className="flex justify-center" >
-      <img src="/assets/studio.png" alt="Workflow" className='w-3/4'/>
+    <div className="flex justify-center mx-[238.125px]" >
+      <img src="/assets/studio.png" alt="Workflow" className=''/>
     </div>
   );
 }
